@@ -98,7 +98,7 @@ iabbrev <buffer> (>=) ⊇
 iabbrev <buffer> (^) ⊖
 iabbrev <buffer> (cont) ∋
 iabbrev <buffer> (elem) ∈
-iabbrev <buffer> (|) ∪
+iabbrev <buffer> (\|) ∪
 iabbrev <buffer> * ×
 iabbrev <buffer> **0 ⁰
 iabbrev <buffer> **1 ¹
