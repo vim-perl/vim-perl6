@@ -89,17 +89,20 @@ if get(g:, 'perl6_unicode_abbrevs', 0)
     iabbrev <buffer> !(elem) ∉
     iabbrev <buffer> != ≠
     iabbrev <buffer> (&) ∩
+    iabbrev <buffer> (+) ⊎
     iabbrev <buffer> (-) ∖
+    iabbrev <buffer> (.) ⊍
     iabbrev <buffer> (<) ⊂
     iabbrev <buffer> (<+) ≼
     iabbrev <buffer> (<=) ⊆
     iabbrev <buffer> (>) ⊃
     iabbrev <buffer> (>+) ≽
     iabbrev <buffer> (>=) ⊇
+    iabbrev <buffer> (\|) ∪
     iabbrev <buffer> (^) ⊖
+    iabbrev <buffer> (atomic) ⚛
     iabbrev <buffer> (cont) ∋
     iabbrev <buffer> (elem) ∈
-    iabbrev <buffer> (\|) ∪
     iabbrev <buffer> * ×
     iabbrev <buffer> **0 ⁰
     iabbrev <buffer> **1 ¹
@@ -111,17 +114,33 @@ if get(g:, 'perl6_unicode_abbrevs', 0)
     iabbrev <buffer> **7 ⁷
     iabbrev <buffer> **8 ⁸
     iabbrev <buffer> **9 ⁹
+    iabbrev <buffer> + ⁺
+    iabbrev <buffer> - −
     iabbrev <buffer> ... …
     iabbrev <buffer> / ÷
     iabbrev <buffer> << «
+    iabbrev <buffer> <<[=]<< «=«
+    iabbrev <buffer> <<[=]>> «=»
     iabbrev <buffer> <= ≤
     iabbrev <buffer> =~= ≅
     iabbrev <buffer> >= ≥
     iabbrev <buffer> >> »
+    iabbrev <buffer> >>[=]<< »=«
+    iabbrev <buffer> >>[=]>> »=»
     iabbrev <buffer> Inf ∞
+    iabbrev <buffer> atomic-add-fetch ⚛+=
+    iabbrev <buffer> atomic-assign ⚛=
+    iabbrev <buffer> atomic-fetch ⚛
+    iabbrev <buffer> atomic-dec-fetch --⚛
+    iabbrev <buffer> atomic-fetch-dec ⚛--
+    iabbrev <buffer> atomic-fetch-inc ⚛++
+    iabbrev <buffer> atomic-inc-fetch ++⚛
+    iabbrev <buffer> atomic-sub-fetch ⚛−=
+    iabbrev <buffer> e 𝑒
+    iabbrev <buffer> o ∘
+    iabbrev <buffer> pi π
     iabbrev <buffer> set() ∅
-    iabbrev <buffer> (.) ⊍
-    iabbrev <buffer> (+) ⊎
+    iabbrev <buffer> tau τ
 endif
 
 " Undo the stuff we changed.
