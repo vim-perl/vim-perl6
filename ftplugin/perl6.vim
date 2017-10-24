@@ -80,47 +80,49 @@ endif
 "---------------------------------------------
 
 " Convert ascii-based ops into their single-character unicode equivalent
-iabbrev <buffer> !(<) ⊄
-iabbrev <buffer> !(<=) ⊈
-iabbrev <buffer> !(>) ⊅
-iabbrev <buffer> !(>=) ⊉
-iabbrev <buffer> !(cont) ∌
-iabbrev <buffer> !(elem) ∉
-iabbrev <buffer> != ≠
-iabbrev <buffer> (&) ∩
-iabbrev <buffer> (-) ∖
-iabbrev <buffer> (<) ⊂
-iabbrev <buffer> (<+) ≼
-iabbrev <buffer> (<=) ⊆
-iabbrev <buffer> (>) ⊃
-iabbrev <buffer> (>+) ≽
-iabbrev <buffer> (>=) ⊇
-iabbrev <buffer> (^) ⊖
-iabbrev <buffer> (cont) ∋
-iabbrev <buffer> (elem) ∈
-iabbrev <buffer> (\|) ∪
-iabbrev <buffer> * ×
-iabbrev <buffer> **0 ⁰
-iabbrev <buffer> **1 ¹
-iabbrev <buffer> **2 ²
-iabbrev <buffer> **3 ³
-iabbrev <buffer> **4 ⁴
-iabbrev <buffer> **5 ⁵
-iabbrev <buffer> **6 ⁶
-iabbrev <buffer> **7 ⁷
-iabbrev <buffer> **8 ⁸
-iabbrev <buffer> **9 ⁹
-iabbrev <buffer> ... …
-iabbrev <buffer> / ÷
-iabbrev <buffer> << «
-iabbrev <buffer> <= ≤
-iabbrev <buffer> =~= ≅
-iabbrev <buffer> >= ≥
-iabbrev <buffer> >> »
-iabbrev <buffer> Inf ∞
-iabbrev <buffer> set() ∅
-iabbrev <buffer> (.) ⊍
-iabbrev <buffer> (+) ⊎
+if get(g:, 'perl6_unicode_abbrevs', 0)
+    iabbrev <buffer> !(<) ⊄
+    iabbrev <buffer> !(<=) ⊈
+    iabbrev <buffer> !(>) ⊅
+    iabbrev <buffer> !(>=) ⊉
+    iabbrev <buffer> !(cont) ∌
+    iabbrev <buffer> !(elem) ∉
+    iabbrev <buffer> != ≠
+    iabbrev <buffer> (&) ∩
+    iabbrev <buffer> (-) ∖
+    iabbrev <buffer> (<) ⊂
+    iabbrev <buffer> (<+) ≼
+    iabbrev <buffer> (<=) ⊆
+    iabbrev <buffer> (>) ⊃
+    iabbrev <buffer> (>+) ≽
+    iabbrev <buffer> (>=) ⊇
+    iabbrev <buffer> (^) ⊖
+    iabbrev <buffer> (cont) ∋
+    iabbrev <buffer> (elem) ∈
+    iabbrev <buffer> (\|) ∪
+    iabbrev <buffer> * ×
+    iabbrev <buffer> **0 ⁰
+    iabbrev <buffer> **1 ¹
+    iabbrev <buffer> **2 ²
+    iabbrev <buffer> **3 ³
+    iabbrev <buffer> **4 ⁴
+    iabbrev <buffer> **5 ⁵
+    iabbrev <buffer> **6 ⁶
+    iabbrev <buffer> **7 ⁷
+    iabbrev <buffer> **8 ⁸
+    iabbrev <buffer> **9 ⁹
+    iabbrev <buffer> ... …
+    iabbrev <buffer> / ÷
+    iabbrev <buffer> << «
+    iabbrev <buffer> <= ≤
+    iabbrev <buffer> =~= ≅
+    iabbrev <buffer> >= ≥
+    iabbrev <buffer> >> »
+    iabbrev <buffer> Inf ∞
+    iabbrev <buffer> set() ∅
+    iabbrev <buffer> (.) ⊍
+    iabbrev <buffer> (+) ⊎
+endif
 
 " Undo the stuff we changed.
 let b:undo_ftplugin = "setlocal fo< com< cms< inc< inex< def< isf< isk< kp< path<" .
